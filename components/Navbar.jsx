@@ -21,11 +21,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="block">
-            <img
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              alt="Logo"
-              className="h-8 w-auto"
-            />
+            <img src="/logo.svg" alt="Logo" className="h-8 w-auto" />
           </Link>
         </div>
 
@@ -81,11 +77,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center p-5 border-b">
           {/* Get Started inside panel (top left) */}
           <Link href="/" className="block">
-            <img
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              alt="Logo"
-              className="h-8 w-auto"
-            />
+            <img src="/logo.svg" alt="Logo" className="h-8 w-auto" />
           </Link>
 
           {/* Close Icon */}
