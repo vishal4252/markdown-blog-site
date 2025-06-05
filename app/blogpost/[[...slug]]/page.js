@@ -1,5 +1,6 @@
 import React from "react";
 import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
 import rehypeDocument from "rehype-document";
@@ -12,7 +13,8 @@ import rehypePrettyCode from "rehype-pretty-code";
 import { transformerCopyButton } from "@rehype-pretty/transformers";
 
 const page = async ({ params }) => {
-  const filepath = `content/${params.slug}.md`;
+  const slug = params.slug;
+  const filepath = path.join(process.cwd(), "content", `${slug}.md`);
   if (!fs.existsSync(filepath)) {
     notFound();
   }
