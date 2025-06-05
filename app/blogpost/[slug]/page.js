@@ -12,7 +12,7 @@ import rehypePrettyCode from "rehype-pretty-code";
 import { transformerCopyButton } from "@rehype-pretty/transformers";
 
 const page = async ({ params }) => {
-  const filepath = `./content/${params.slug}.md`;
+  const filepath = `content/${params.slug}.md`;
   if (!fs.existsSync(filepath)) {
     notFound();
   }
