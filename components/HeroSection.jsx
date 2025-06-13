@@ -41,7 +41,7 @@ const HeroSection = () => {
           <div className="mt-6">
             <Button size="lg">
               <Link
-                href="#"
+                href="/blog"
                 className="inline-block text-white font-semibold rounded-lg shadow transition duration-300"
               >
                 Get Started
